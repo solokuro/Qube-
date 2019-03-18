@@ -101,7 +101,13 @@ public class buttonclick : MonoBehaviour
                     controol.num += "9";
                     count++;
                     break;
-               
+
+                case "Number0":
+                    Debug.Log("0おした");
+                    controol.num += "0";
+                    count++;
+                    break;
+
 
             }
         }

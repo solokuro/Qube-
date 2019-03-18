@@ -10,7 +10,7 @@ public class goal : MonoBehaviour {
     void Start () {
 
         goalflag = false;
-        anserword = "1594";
+        
 
     }
 

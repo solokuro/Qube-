@@ -5,7 +5,7 @@ using UnityEngine;
 public class goal : MonoBehaviour {
 
     public static bool goalflag;
-    private string anserword;
+    [SerializeField] private string anserword;
     // Use this for initialization
     void Start () {
 

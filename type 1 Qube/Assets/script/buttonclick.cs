@@ -22,16 +22,20 @@ public class buttonclick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && count < 4)
+        if (goal.goalflag == false)
         {
-            SearchRoom();//右クリックを押したとき
-        }
-        if(Input.GetMouseButtonDown(1))//エンター押せるクリア押させる
-        {
-            Action();
-        }
+            if (Input.GetMouseButtonDown(1) && count < 4)
+            {
+                SearchRoom();//右クリックを押したとき
+            }
+            if (Input.GetMouseButtonDown(1))//エンター押せるクリア押させる
+            {
+                Action();
+            }
 
+        }
     }
+
 
 
     void SearchRoom()
@@ -120,7 +124,7 @@ public class buttonclick : MonoBehaviour
 
                 case "Enter":if(count == 4)
                     Debug.Log("決定");
-                    controol.num = anwer;
+                    anwer = controol.num;
                     count = 0;
                     break;
                 //case "Back":if(count<4)

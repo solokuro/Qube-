@@ -131,6 +131,7 @@ public class buttonclick : MonoBehaviour
                 case "Enter":if(count == 4)
                     Debug.Log("決定");
                     anwer = controol.num;
+                    controol.num = "";
                     count = 0;
                     break;
                 //case "Back":if(count<4)

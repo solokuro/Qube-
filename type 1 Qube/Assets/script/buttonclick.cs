@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class buttonclick : MonoBehaviour
 {
 
     private Ray rayone,raytwo;
     private RaycastHit hitone,hittwo;//オブジェクトの情報取得変数
-    private GameObject selectedObject,actioncomand;
+    private GameObject selectedObject, actioncomand;
     private float count = 0;
+    public static string anwer;
 
     // Use this for initialization
     void Start()
     {
-      
+        controol.num = "";
+
     }
 
     // Update is called once per frame
@@ -43,39 +46,55 @@ public class buttonclick : MonoBehaviour
             {
                 case "Number1"://オブジェクトの名前
                     Debug.Log("1おした");
-                    
+                    controol.num += "1";
                     count++;
                     break;
+
                 case "Number2":
                     Debug.Log("２押した");
+                    controol.num += "2";
                     count++;
                     break;
-                case "Number3"://
+
+                case "Number3":
                     Debug.Log("3押した");
+                    controol.num += "3";
                     count++;
                     break;
+
                 case "Number4":
                     Debug.Log("4押した");
+                    controol.num += "4";
                     count++;
                     break;
+
                 case "Number5":
                     Debug.Log("5押した");
+                    controol.num += "5";
                     count++;
                     break;
+
                 case "Number6":
                     Debug.Log("6押した");
+                    controol.num += "6";
                     count++;
                     break;
+
                 case "Number7":
                     Debug.Log("7押した");
+                    controol.num += "7";
                     count++;
                     break;
+
                 case "Number8":
                     Debug.Log("8押した");
+                    controol.num += "8";
                     count++;
                     break;
+
                 case "Number9":
                     Debug.Log("9押した");
+                    controol.num += "9";
                     count++;
                     break;
                
@@ -95,10 +114,13 @@ public class buttonclick : MonoBehaviour
             {
                 case "Clear":if(count<4 || count == 4)
                     Debug.Log("クリア");
+                    controol.num = "";
                     count = 0;
                     break;
+
                 case "Enter":if(count == 4)
                     Debug.Log("決定");
+                    controol.num = anwer;
                     count = 0;
                     break;
                 //case "Back":if(count<4)

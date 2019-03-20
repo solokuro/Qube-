@@ -22,7 +22,7 @@ public class buttonclick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (goal.goalflag == false)
+        if (quiz1.clearflag == false)
         {
             if (Input.GetMouseButtonDown(1) && count < 4)
             {
@@ -124,14 +124,14 @@ public class buttonclick : MonoBehaviour
             {
                 case "Clear":if(count<4 || count == 4)
                     Debug.Log("クリア");
-                    controol.num = "";
+                    controol.num = null;
                     count = 0;
                     break;
 
                 case "Enter":if(count == 4)
                     Debug.Log("決定");
                     anwer = controol.num;
-                    controol.num = "";
+                    controol.num = null;
                     count = 0;
                     break;
                 //case "Back":if(count<4)

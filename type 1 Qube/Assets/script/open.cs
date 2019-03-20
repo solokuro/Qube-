@@ -12,15 +12,23 @@ public class open : MonoBehaviour {
     {
         animator =GetComponent<Animator>();
         fade = false;
+		
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(goal.goalflag)
-        { 
-            this.animator.SetTrigger("open");
-            fade = true;
-        }
+		if (quiz1.clearflag)
+		{
+			this.animator.SetTrigger("open");
+
+
+		}
+		else if (quiz2.nextstage)
+		{
+			this.animator.SetTrigger("open");
+		}
+
+		
     }
 }

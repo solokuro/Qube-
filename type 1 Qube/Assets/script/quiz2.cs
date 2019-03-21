@@ -5,14 +5,14 @@ using UnityEngine;
 public class quiz2 : MonoBehaviour
 {
 
-	public static bool nextstage;
+	
 	public static bool moveflag2;
 	private Animator animator2;
 	
     // Start is called before the first frame update
     void Start()
     {
-		nextstage = false;
+		
 		moveflag2 = false;
 		animator2 = GetComponent<Animator>();
     }
@@ -28,7 +28,7 @@ public class quiz2 : MonoBehaviour
 
 	void Quiz2()
 	{
-		nextstage = true;
+		
 		moveflag2 = true;
 		this.animator2.SetTrigger("open");
 	}

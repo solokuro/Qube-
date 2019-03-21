@@ -15,7 +15,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (quizS.moveflag) Invoke("Move", 3f);
+        if (quizstart.moveflag) Invoke("Move",3f);
 		if (quiz2.moveflag2) Invoke("Move2", 3f);
         
 

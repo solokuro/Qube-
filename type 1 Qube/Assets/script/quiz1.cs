@@ -6,13 +6,13 @@ public class quiz1 : MonoBehaviour
 {
 
 	public static bool clearflag;
-	public static bool moveflag;
+	public static bool fade;
 	private Animator animator;
 	[SerializeField] private string anserword;
 	// Use this for initialization
 	void Start()
 	{
-		moveflag = false;
+		fade = false;
 		clearflag = false;
 		animator = GetComponent<Animator>();
 		
@@ -34,7 +34,7 @@ public class quiz1 : MonoBehaviour
 		clearflag= true;
 		buttonclick.anwer = null;
 		this.animator.SetTrigger("open");
-		moveflag = true;
+		fade = true;
 	}
 	
 }

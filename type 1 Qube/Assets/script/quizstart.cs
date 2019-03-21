@@ -2,34 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class quizS: MonoBehaviour
+public class quizstart : MonoBehaviour
 {
 
-    public static bool nextstage;
     public static bool moveflag;
-    private Animator animator;
+    private Animator animator3;
 
     // Start is called before the first frame update
     void Start()
     {
-        nextstage = false;
+
         moveflag = false;
-        animator = GetComponent<Animator>();
+        animator3 = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.T))
+      if(Input.GetKey(KeyCode.A))
         {
-            Quiz();
+            Quizstart();
         }
+
     }
 
-    void Quiz()
+    void Quizstart()
     {
-        nextstage = true;
         moveflag = true;
-        this.animator.SetTrigger("open");
+        this.animator3.SetTrigger("open");
     }
+
 }

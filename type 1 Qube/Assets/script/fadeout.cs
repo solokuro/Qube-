@@ -24,7 +24,7 @@ public class fadeout : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isfadeout&& open.fade)
+        if (isfadeout&& quiz1.fade)
         {
             Invoke("Startfadeout", 2f);
         }

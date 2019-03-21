@@ -15,11 +15,12 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (quiz1.moveflag) Invoke("Move", 3f);
+		if (quizS.moveflag) Invoke("Move", 3f);
 		if (quiz2.moveflag2) Invoke("Move2", 3f);
-		
-		
-	}
+        
+
+
+    }
 	void Move()
 	{
 		Transform mytransform = this.transform;
@@ -37,9 +38,10 @@ public class move : MonoBehaviour
 		Vector3 worldpos = mytransform.position;
 		worldpos.x = 0.0f;
 		worldpos.y = 1.5f;
-		worldpos.z = 11.0f;
+		worldpos.z = 10.0f;
 		mytransform.position = worldpos;
 	}
+  
 
 
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Fpsmouse : MonoBehaviour {
 
 	[SerializeField]private float Speed;
-	private const float Angle_limitup = 80f;
-	private const float Angle_limitdown = -80f;
+	private const float Angle_limitup = 60f;
+	private const float Angle_limitdown = -60f;
 
 	// Use this for initialization
 	void Start () {

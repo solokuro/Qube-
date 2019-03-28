@@ -38,7 +38,7 @@ public class quiz2 : MonoBehaviour
             select = hit.collider.gameObject;
             switch (select.name)
             {
-              case "openbutton":
+              case "openbutton2":
               moveflag2 = true;
               this.animator2.SetTrigger("open");
               this.closeanimator.SetTrigger("close");
